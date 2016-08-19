@@ -2,7 +2,7 @@
 > fastest javascript CRON implementation
 
 The library is implemented with speed in mind. For condition  
-checking we user bitwise operations. Each `minute`, `hour`, `dom`, `month`, `dow`  
+checking we use bitwise operations. Each `minute`, `hour`, `dom`, `month`, `dow`  
 is represented by one **bit**, this makes condition checking really fast.
 
 It can easily handle thousands of CRON Jobs at once.
