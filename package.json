@@ -1,0 +1,31 @@
+{
+  "name": "cronbit",
+  "version": "1.0.0",
+  "description": "Fastest javascript CRON implementation",
+  "main": "./lib/cronbit.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donvercety/cronbit.git"
+  },
+  "keywords": [
+    "cron",
+    "cron-job",
+    "task"
+  ],
+  "author": "Tommy Vercety",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donvercety/cronbit/issues"
+  },
+  "homepage": "https://github.com/donvercety/cronbit",
+  "engines" : {
+    "node" : ">=4.4.x"
+  }
+}
