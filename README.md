@@ -1,11 +1,15 @@
 ## cronbit
-> fastest javascript CRON implementation
+> Fastest javascript CRON implementation,  
+> no external dependencies! Pure javascript.
 
-The library is implemented with speed in mind. For condition  
-checking we use bitwise operations. Each `minute`, `hour`, `dom`, `month`, `dow`  
-is represented by one **bit**, this makes condition checking really fast.
+The library is implemented with speed in mind. For  
+condition checking - bitwise operations are used.  
+Each `minute`, `hour`, `dom`, `month`, `dow` is represented  
+by one **bit**, this makes condition checking really fast.
 
 It can easily handle thousands of CRON Jobs at once.
+  
+For the speed boost the module is made to work with server time.
 
 ### Install
     npm install cronbit
@@ -24,6 +28,13 @@ It can easily handle thousands of CRON Jobs at once.
 cron.init("* * * * *", calllback)
 ```
 
+Available Cron patterns:
+
+    Asterisk. E.g. *
+    Ranges. E.g. 1-3
+    Steps. E.g. */2
+    Lists, E.g. 1,2,3,6,7,9
+
 
 ### Simple Example
 
@@ -41,9 +52,9 @@ cron.init("*/5 * * * *", function() {
 });
 ```
 
-### Other functionality for more complex use
+### Module methods that can be used for self made CRON logic
 
-Generates bit-mask array form CRON string ("*/5 * * * *").
+Generates bit-mask array from CRON string (`"*/5 * * * *"`).
 ```js
 /**
  * Make bit-mask array

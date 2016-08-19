@@ -1,6 +1,6 @@
 {
   "name": "cronbit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fastest javascript CRON implementation",
   "main": "./lib/cronbit.js",
   "directories": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/donvercety/cronbit.git"
+    "url": "https://github.com/donvercety/node-cronbit.git"
   },
   "keywords": [
     "cron",
@@ -22,9 +22,9 @@
   "author": "Tommy Vercety",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/donvercety/cronbit/issues"
+    "url": "https://github.com/donvercety/node-cronbit/issues"
   },
-  "homepage": "https://github.com/donvercety/cronbit",
+  "homepage": "https://github.com/donvercety/node-cronbit",
   "engines" : {
     "node" : ">=4.4.x"
   }
